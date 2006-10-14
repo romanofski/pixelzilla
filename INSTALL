@@ -1,0 +1,18 @@
+The installation of the JAR (like pixelzilla.jar) file is easy. Just go
+to texturizer:
+
+  http://texturizer.net/firebird/themes/#install
+
+and insert the path to the jar file in the "Local File" input box (okey..
+  using the browse button is much easier). You should be able to install
+the JAR file.
+
+Please keep in mind, that the pixelzilla theme won't work with *MOZILLA*.
+It works only for *Mozilla FIREBIRD*. I try to make a port to Mozilla if
+i've much more spare time.
+
+For problems, suggestions and feedback about the theme drop me an email at:
+
+  roman@bromeco.de.
+
+Thanks for using my theme!

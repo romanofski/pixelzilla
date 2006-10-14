@@ -1,0 +1,629 @@
+2006-10-14  Roman Joost  <roman@bromeco.de>
+
+	* firefox2/install.rdf: updated for Firefox 2 compatible theme
+
+	* firefox2/preview.gif: removed, because it isn't in use anyways
+
+
+2006-02-02  Roman Joost	<roman@bromeco.de>
+
+	* firefox2/global/browser.css: added tab-close image CSS def
+
+	* firefox2/global/icons/close.png
+	* firefox2/global/icons/Error.png: converted to indexed
+
+	* firefox2/install.rdf: bumped to version 0.9.10, now
+	installable for firefox up to 1.6a
+
+	* firefox2/browser/bookmarks/bookmarksManager.css: fix for new
+	bookmark button
+
+2005-12-10  Roman Joost <roman@bromeco.de>
+
+        * firefox2/global/spinbuttons.css
+        * firefox2/global/toolbarbutton.css
+        * firefox2/global/dialog.css
+        * firefox2/global/checkbox/cbox-check.gif
+        * firefox2/global/netError.css
+        * firefox2/global/menulist.css
+        * firefox2/global/wizard.css
+        * firefox2/global/progressmeter.css
+        * firefox2/global/preferences.css
+        * firefox2/global/autocomplete.css
+        * firefox2/global/toolbar.css
+        * firefox2/global/popup.css
+        * firefox2/global/config.css
+        * firefox2/global/findBar.css
+        * firefox2/global/splitter.css
+        * firefox2/global/scrollbox.css
+        * firefox2/global/button.css
+        * firefox2/global/browser.css
+        * firefox2/global/listbox.css
+        * firefox2/global/checkbox.css
+        * firefox2/global/richlistbox.css
+        * firefox2/global/arrow.css
+        * firefox2/global/textbox.css
+        * firefox2/global/radio.css
+        * firefox2/global/printPreview.css
+        * firefox2/global/xulscrollbars.css
+        * firefox2/global/tree.css
+        * firefox2/global/global.css
+        * firefox2/global/menu.css
+        * firefox2/global/groupbox.css
+        * firefox2/global/customizeToolbar.css
+        * firefox2/global/expander.css
+        * firefox2/global/printPageSetup.css
+        * firefox2/global/formatting.css
+        * firefox2/global/colorpicker.css
+        * firefox2/global/nativescrollbars.css
+        * firefox2/global/linkTree.css
+        * firefox2/global/filepicker.css
+        * firefox2/global/tabbox.css
+        * firefox2/global/plugins.css: copied from Firefox 1.5
+        classic theme, which fixes the weird Microsoft Windows errors
+
+        * firefox2/global/icons/warning-large.png
+        * firefox2/global/icons/Portrait.png
+        * firefox2/global/icons/Warning.png
+        * firefox2/global/icons/Question.png
+        * firefox2/global/icons/folder-item.png
+        * firefox2/global/icons/Error.png
+        * firefox2/global/icons/Landscape.png: made them more
+        blueish
+
+        * firefox2/install.rdf: bumped to 0.9.9
+
+        * src/20x20-icons.xcf: updated icons
+
+2005-10-15  Roman Joost <roman@bromeco.de>
+
+        * firefox2/browser/bookmarks/bookmarksManager.css
+        * firefox2/browser/preferences/Options.png: fixed bugs:
+        #005325, #005326, #005327, #005328
+
+2005-10-15  Roman Joost <roman@bromeco.de>
+
+        * firefox2/global/icons/Warning.png
+        * firefox2/global/icons/warning.png: renamed to uppercase
+        Warning, which should now be used by the theme
+
+2005-10-15  Roman Joost <roman@bromeco.de>
+
+        * firefox2/global/icons/warning.png: new warning icon
+        * firefox2/browser/browser.css: fixed throbber handling, which
+        should now also appear in not animated state
+
+        * src/marks-large.xcf: updated (warning added)
+
+2005-10-14  Roman Joost <roman@bromeco.de>
+
+        * firefox2/global/global.css: tried to fix the throbber
+
+        * firefox2/global/icons/warning-large.png: has now a
+        silverish look
+
+        * firefox2/global/icons/Question.png
+        * firefox2/global/icons/Error.png: updated according to
+        marks-large.xcf
+
+        * firefox2/install.rdf: bumped to next version
+        
+        * src/marks-large.xcf: added missing white stripes at the
+        bottom
+
+        * firefox2/browser/throbber16-single.gif
+        * firefox2/browser/throbber16-anim.gif
+        * firefox2/browser/browser.css: already in global/throbber,
+        so not needed anymore here.
+
+2005-10-01  Roman Joost	<roman@bromeco.de>
+
+	* firefox2/browser/Toolbar.png
+	* firefox2/mozapps/downloads/downloadCleanupDisabled.png
+	* firefox2/browser/Toolbar-small.png
+	* firefox2/help/Toolbar.png: deprecated and from the old
+	classic theme 
+
+	* firefox2/global/tabDragDrop/tabDragIndicator.png
+	* firefox2/global/throbber/Throbber-small.png
+	* firefox2/global/throbber/Throbber-small.gif
+	* firefox2/global/icons/notfound.png
+	* firefox2/global/icons/Print-preview.png
+	* firefox2/global/icons/find.png
+	* firefox2/install.rdf
+	* firefox2/browser/toolbar.png
+	* firefox2/browser/bookmarks/bookmarksManager.css
+	* firefox2/browser/bookmarks/Bookmarks-toolbar.png
+	* firefox2/browser/browser.css
+	* firefox2/preview.png
+	* firefox2/help/help.css
+	* firefox2/mozapps/extensions/actionbuttons.png
+	* firefox2/mozapps/extensions/themeGeneric.png
+	* firefox2/mozapps/extensions/extensions.css
+	* firefox2/mozapps/update/update.png
+	* firefox2/mozapps/update/extensionalert.png
+	* firefox2/mozapps/webdeveloper
+	* firefox2/mozapps/webdeveloper/webdev-toolbar.png
+	* firefox2/mozapps/webdeveloper/webdev-statusbar.png
+	* firefox2/mozapps/webdeveloper/webdev-sidebar.png
+	* firefox2/mozapps/webdeveloper/webdeveloper.css
+	* firefox2/mozapps/downloads/downloads.css
+	* firefox2/mozapps/downloads/downloadCleanup.png
+	* firefox2/mozapps/downloads/downloadIcon.png
+	* firefox2/mozapps/downloads/downloadsBG.png
+	* firefox2/mozapps/xpinstall/xpinstallItemGeneric.png: added
+	most of the old theme to the new one, which now supports a
+	recent firefox 1.5 build
+	
+	* thunderbird/install.rdf
+	* thunderbird/preview.png
+	* thunderbird/messenger/icons/message-mail-new-read.png
+	* thunderbird/messenger/icons/message-mail.png
+	* thunderbird/messenger/icons/message-mail-read.png
+	* thunderbird/messenger/icons/message-mail-forwarded-read.png
+	* thunderbird/messenger/icons/message-mail-forwarded.png
+	* thunderbird/messenger/icons/message-mail-replied.png
+	* thunderbird/messenger/icons/message-mail-replied-read.png: small
+	changes for the thunderbird theme
+	
+2005-08-26  Roman Joost	<roman@bromeco.de>
+
+	* firefox2
+	* firefox2/communicator
+	* firefox2/communicator/communicator.css
+	* firefox2/global
+	* firefox2/global/spinbuttons.css
+	* firefox2/global/toolbarbutton.css
+	* firefox2/global/dialog.css
+	* firefox2/global/checkbox
+	* firefox2/global/checkbox/cbox-check-dis.gif
+	* firefox2/global/checkbox/cbox-check.gif
+	* firefox2/global/netError.css
+	* firefox2/global/menulist.css
+	* firefox2/global/wizard.css
+	* firefox2/global/progressmeter.css
+	* firefox2/global/preferences.css
+	* firefox2/global/autocomplete.css
+	* firefox2/global/toolbar.css
+	* firefox2/global/popup.css
+	* firefox2/global/alerts
+	* firefox2/global/alerts/alert.css
+	* firefox2/global/arrow
+	* firefox2/global/arrow/arrow-up.gif
+	* firefox2/global/arrow/arrow-lft.gif
+	* firefox2/global/arrow/arrow-down.png
+	* firefox2/global/arrow/arrow-rit-hov.gif
+	* firefox2/global/arrow/arrow-dn-hov.gif
+	* firefox2/global/arrow/arrow-rit.gif
+	* firefox2/global/arrow/arrow-up-sharp.gif
+	* firefox2/global/arrow/arrow-lft-sharp.gif
+	* firefox2/global/arrow/arrow-up-dis.gif
+	* firefox2/global/arrow/arrow-dn.gif
+	* firefox2/global/arrow/arrow-lft-dis.gif
+	* firefox2/global/arrow/arrow-lft-sharp-end.gif
+	* firefox2/global/arrow/arrow-rit-sharp.gif
+	* firefox2/global/arrow/arrow-rit-dis.gif
+	* firefox2/global/arrow/arrow-dn-sharp.gif
+	* firefox2/global/arrow/arrow-rit-sharp-end.gif
+	* firefox2/global/arrow/arrow-dn-dis.gif
+	* firefox2/global/arrow/arrow-up-hov.gif
+	* firefox2/global/arrow/arrow-lft-hov.gif
+	* firefox2/global/findBar.css
+	* firefox2/global/config.css
+	* firefox2/global/splitter.css
+	* firefox2/global/radio
+	* firefox2/global/radio/radio-check-dis.gif
+	* firefox2/global/radio/radio-check.gif
+	* firefox2/global/scrollbox.css
+	* firefox2/global/tree
+	* firefox2/global/tree/columnpicker.gif
+	* firefox2/global/tree/sort-asc.gif
+	* firefox2/global/tree/sort-dsc.gif
+	* firefox2/global/tree/twisty-open.png
+	* firefox2/global/tree/twisty-clsd.png
+	* firefox2/global/button.css
+	* firefox2/global/menu
+	* firefox2/global/menu/Menu-arrow.png
+	* firefox2/global/menu/Menu-arrow-hover-rtl.png
+	* firefox2/global/menu/Menu-arrow-hover.png
+	* firefox2/global/menu/Menu-arrow-disabled-rtl.png
+	* firefox2/global/menu/menu-check.gif
+	* firefox2/global/menu/Menu-arrow-disabled.png
+	* firefox2/global/menu/menu-check-hover.gif
+	* firefox2/global/menu/menu-radio.gif
+	* firefox2/global/menu/menu-radio-hover.gif
+	* firefox2/global/menu/menu-check-disabled.gif
+	* firefox2/global/menu/menu-radio-disabled.gif
+	* firefox2/global/menu/Menu-arrow-rtl.png
+	* firefox2/global/browser.css
+	* firefox2/global/listbox.css
+	* firefox2/global/globalBindings.xml
+	* firefox2/global/checkbox.css
+	* firefox2/global/arrow.css
+	* firefox2/global/richlistbox.css
+	* firefox2/global/scrollbar
+	* firefox2/global/scrollbar/slider.gif
+	* firefox2/global/textbox.css
+	* firefox2/global/radio.css
+	* firefox2/global/printPreview.css
+	* firefox2/global/xulscrollbars.css
+	* firefox2/global/tree.css
+	* firefox2/global/global.css
+	* firefox2/global/tabDragDrop
+	* firefox2/global/tabDragDrop/tabDragIndicator.png
+	* firefox2/global/menu.css
+	* firefox2/global/groupbox.css
+	* firefox2/global/customizeToolbar.css
+	* firefox2/global/expander.css
+	* firefox2/global/Filepicker.png
+	* firefox2/global/printPageSetup.css
+	* firefox2/global/formatting.css
+	* firefox2/global/console
+	* firefox2/global/console/console.css
+	* firefox2/global/console/console-error-caret.gif
+	* firefox2/global/console/console-error-dash.gif
+	* firefox2/global/toolbar
+	* firefox2/global/toolbar/spring.gif
+	* firefox2/global/toolbar/chevron-rtl.gif
+	* firefox2/global/toolbar/chevron.gif
+	* firefox2/global/toolbar/Lighten.png
+	* firefox2/global/colorpicker.css
+	* firefox2/global/nativescrollbars.css
+	* firefox2/global/linkTree.css
+	* firefox2/global/filepicker.css
+	* firefox2/global/tabbox.css
+	* firefox2/global/throbber
+	* firefox2/global/throbber/Throbber-small.png
+	* firefox2/global/throbber/Throbber-small.gif
+	* firefox2/global/plugins.css
+	* firefox2/global/icons
+	* firefox2/global/icons/notfound.png
+	* firefox2/global/icons/warning-large.png
+	* firefox2/global/icons/Minimize.gif
+	* firefox2/global/icons/Portrait.png
+	* firefox2/global/icons/Restore.gif
+	* firefox2/global/icons/close.png
+	* firefox2/global/icons/warning.png
+	* firefox2/global/icons/folder-item.png
+	* firefox2/global/icons/Question.png
+	* firefox2/global/icons/wrap.png
+	* firefox2/global/icons/Print-preview.png
+	* firefox2/global/icons/find.png
+	* firefox2/global/icons/Close.gif
+	* firefox2/global/icons/Error.png
+	* firefox2/global/icons/tabstrip-bottom.png
+	* firefox2/global/icons/Landscape.png
+	* firefox2/install.rdf
+	* firefox2/license.txt
+	* firefox2/browser
+	* firefox2/browser/pageInfo.css
+	* firefox2/browser/searchbar.css
+	* firefox2/browser/browser.xml
+	* firefox2/browser/Bookmarks-folder.png
+	* firefox2/browser/feedview.css
+	* firefox2/browser/Toolbar.png
+	* firefox2/browser/Go-rtl.png
+	* firefox2/browser/bookmarks
+	* firefox2/browser/bookmarks/addBookmark.css
+	* firefox2/browser/bookmarks/bookmarksManager.css
+	* firefox2/browser/bookmarks/Bookmarks-toolbar.png
+	* firefox2/browser/Go.png
+	* firefox2/browser/livemark-item-rtl.png
+	* firefox2/browser/page-livemarks-rtl.png
+	* firefox2/browser/livemark-item.png
+	* firefox2/browser/itemSelected.png
+	* firefox2/browser/page-livemarks.png
+	* firefox2/browser/Search-bar.png
+	* firefox2/browser/Toolbar-small.png
+	* firefox2/browser/check.png
+	* firefox2/browser/search-arrow.gif
+	* firefox2/browser/preferences
+	* firefox2/browser/preferences/preferences.css
+	* firefox2/browser/preferences/Options.png
+	* firefox2/browser/throbber16-single.gif
+	* firefox2/browser/throbber16-anim.gif
+	* firefox2/browser/Security-broken.png
+	* firefox2/browser/Secure.png
+	* firefox2/browser/browser.css
+	* firefox2/browser/Info.png
+	* firefox2/preview.png
+	* firefox2/preview.gif
+	* firefox2/contents.rdf
+	* firefox2/help
+	* firefox2/help/help.css
+	* firefox2/help/Toolbar.png
+	* firefox2/help/Weblink-rtl.png
+	* firefox2/help/helpFileLayout.css
+	* firefox2/help/Weblink.png
+	* firefox2/mozapps
+	* firefox2/mozapps/extensions
+	* firefox2/mozapps/extensions/actionbuttons.png
+	* firefox2/mozapps/extensions/about.css
+	* firefox2/mozapps/extensions/themeGeneric.png
+	* firefox2/mozapps/extensions/extensions.css
+	* firefox2/mozapps/extensions/update.css
+	* firefox2/mozapps/profile
+	* firefox2/mozapps/profile/profileicon.gif
+	* firefox2/mozapps/profile/profileSelection.css
+	* firefox2/mozapps/plugins
+	* firefox2/mozapps/plugins/pluginInstallerWizard.css
+	* firefox2/mozapps/update
+	* firefox2/mozapps/update/update.png
+	* firefox2/mozapps/update/extensionalert.png
+	* firefox2/mozapps/update/warning.gif
+	* firefox2/mozapps/update/updates.css
+	* firefox2/mozapps/shared
+	* firefox2/mozapps/shared/richview.xml
+	* firefox2/mozapps/shared/viewFader.png
+	* firefox2/mozapps/shared/itemFader.png
+	* firefox2/mozapps/shared/richview.css
+	* firefox2/mozapps/shared/itemSelected.png
+	* firefox2/mozapps/downloads
+	* firefox2/mozapps/downloads/viewFader.png
+	* firefox2/mozapps/downloads/downloads.css
+	* firefox2/mozapps/downloads/downloadCleanup.png
+	* firefox2/mozapps/downloads/downloadIcon.png
+	* firefox2/mozapps/downloads/downloadSelected.png
+	* firefox2/mozapps/downloads/unknownContentType.css
+	* firefox2/mozapps/downloads/downloadsBG.png
+	* firefox2/mozapps/downloads/downloads.xml
+	* firefox2/mozapps/downloads/downloadCleanupDisabled.png
+	* firefox2/mozapps/pref
+	* firefox2/mozapps/pref/check.gif
+	* firefox2/mozapps/pref/pref.css
+	* firefox2/mozapps/pref/dot.gif
+	* firefox2/mozapps/xpinstall
+	* firefox2/mozapps/xpinstall/xpinstallConfirm.css
+	* firefox2/mozapps/xpinstall/xpinstallItemGeneric.png
+	* firefox2/icon.png: new directory for firefox2 PixelZilla
+
+	* src/prefs.xcf: modified for firefox2
+
+	* src/warning-large.xcf: new warning for firefox2
+
+2005-06-19  Roman Joost	<roman@bromceo.de>
+
+	* firefox/global/toolbarbutton.css: small padding modifications
+	* firefox/install.rdf: new version
+	
+	* firefox/browser/pref
+	* firefox/browser/pref/pref.css
+	* firefox/browser/pref/Options.png
+	* firefox/browser/preferences
+	* firefox/browser/browser.css: renamed to be more common
+	with the classic skin
+	
+	* firefox/contents.rdf: use the png instead of the gif
+	* firefox/mozapps/update/icon32.png: not more needed
+	* firefox/mozapps/update/extensionalert.png: new icon for
+	informing the user if new updates are available
+	
+	* src/prefs.xcf: new icons for Firefox 2.0
+	* src/20x20-icons.xcf: new icons
+
+2005-03-24  Roman Joost	<roman@bromeco.de>
+
+	* preview.png
+	* preview.gif
+	* install.rdf
+	* contents.rdf
+	* mozapps/extensions
+	* mozapps/extensions/actionbuttons.png
+	* mozapps/extensions/about.css
+	* mozapps/extensions/themeGeneric.png
+	* mozapps/extensions/extensions.css
+	* mozapps/extensions/placeholder.gif
+	* mozapps/extensions/extensionHome.png
+	* mozapps/extensions/extensionOptions.png
+	* mozapps/update
+	* mozapps/update/icon32.png
+	* mozapps/update/update.png
+	* mozapps/update/update.css
+	* mozapps/update/warning.gif
+	* mozapps/shared
+	* mozapps/shared/richview.xml
+	* mozapps/shared/viewFader.png
+	* mozapps/shared/itemFader.png
+	* mozapps/shared/extensionalert.png
+	* mozapps/shared/richview.css
+	* mozapps/shared/itemSelected.png
+	* mozapps/shared/info.png: applied patch submitted by Yury
+	Soldak and a new splash image for (thunderbird)-PixelZilla from
+	Lars Joost
+	
+2004-09-16  Roman Joost	<roman@bromeco.de>
+
+	* firefox/browser/browser.css: fixed bug #002269
+	
+	* firefox/mozapps/extensions/extensions.css
+	* firefox/mozapps/extensions/extensionAbout.png
+	* firefox/mozapps/shared/extensionalert.png
+	* firefox/mozapps/shared/info.png
+	* firefox/mozapps/update/extensionalert.png
+	* firefox/mozapps/update/update.css: moved some icons to
+	shared to reuse them again
+	
+	* ChangeLog: renamed
+
+2004-09-12  Roman Joost	<roman@bromeco.de>
+
+	* firefox/install.rdf: new minor version
+	
+	* firefox/browser/find.png
+	* firefox/browser/browser.css: added css styles for find, which
+	  should fix bug #002269 (not tested enough)
+	
+	* src/thunderbird_priest400x400.png: new background like image
+	  for thunderbird, source will follow
+	
+	* src/extension/extensions.xcf: added icons
+
+2004-08-24	Victor Nilsson	<vervex@home.se>
+
+	* Moved the web developer code from firefox/.../global.css to 
+	  browser.css
+
+	* firefox/help/help.css
+	* firefox/mozapps/extensions/extensions.css
+	* update.rdf
+
+
+2004-08-23	Victor Nilsson	<vervex@home.se>
+
+	* firefox/global/menu.css: a fix which makes dropdown arrows 
+	  appear in toolbar buttons
+	* firefox/global/icons/folder-item.png: modified disabled state
+
+	* firefox/browser/bookmarks/Bookmarks-toolbar.png: change the 
+	  icon size to 16x16 and modified some icons 
+	* firefox/browser/bookmarks/bookmarksManager.css
+
+	* firefox/help/help-toolbar.png
+	* firefox/help/help.css
+	* firefox/help/sbtab-texture.gif
+	* firefox/help/sbtab-twisty.png
+	* firefox/help/sidebar.css
+	* firefox/help/sidebarBindings.xml
+	* firefox/help/sbtab-twisty-open.gif: deleted
+	* firefox/help/sbtab-twisty.gif: deleted
+
+	* firefox/mozapps/webdeveloper/webdev-toolbar.png: replaced the 
+	  outline icon
+
+	* src/webdev-toolbar.png
+	* src/help-toolbar.xcf
+
+
+2004-08-14	Roman Joost	<roman@bromeco.de>
+
+	* firefox/install.rdf: new version
+	
+	* src/20x20-icons.xcf
+	* firefox/browser/toolbar.png: new bookmarks icon, which fixes
+	  bug #002223
+	
+	* firefox/browser/about.png
+	* firefox/browser/aboutDialog.css: removed because it's
+	  deprecated and not anymore in use
+	
+	* firefox/preview.png: fixed Name to Stephanie Warrick
+	
+
+2004-08-08	Roman Joost	<roman@bromeco.de>
+
+	* firefox/global/global.css
+	* firefox/browser/webdev-toolbar.png
+	* firefox/browser/webdev-statusbar.png
+	* firefox/browser/webdev-sidebar.png
+	* firefox/mozapps/webdeveloper
+	* firefox/mozapps/webdeveloper/webdev-toolbar.png
+	* firefox/mozapps/webdeveloper/webdev-statusbar.png
+	* firefox/mozapps/webdeveloper/webdev-sidebar.png: moved into
+	   seperate location
+	   
+	* src/extensionalert.xcf
+	* src/display.xcf
+	* src/throbber_old.xcf
+	* src/packet.xcf
+	* src/throbber.xcf
+	* src/buttonsnew.xcf
+	* src/Close-tab.xcf
+	* src/little_display.xcf
+	* src/20x20-icons.xcf
+	* src/little_displayanimated.xcf
+	* src/throbber_old_merged.xcf
+	* src/throbber_merged.xcf
+	* src/tab-throbber
+	* src/tab-throbber/tab-throbber.xcf
+	* src/tab-throbber/tab-throbber_merged.xcf
+	* src/tab-new.xcf
+	* src/page-themes.xcf
+	* src/tab-throbber.xcf
+	* src/tab-throbber_merged.xcf
+	* src/16x16-icons.xcf: moved icons into container file 
+	
+	* firefox/browser/about.png
+	* src/extensionAbout.xcf: fixed name to Stephanie Warrick
+
+2004-07-26  Roman Joost <roman@bromeco.de>
+
+	* src/buttonsnew.xcf
+	* src/page-themes.xcf 
+	* firefox/global/global.css
+	* firefox/browser/webdev-toolbar.png
+	* firefox/browser/webdev-statusbar.png
+	* firefox/browser/webdev-sidebar.png: webdeveloper extension
+	  icons
+
+2004-07-23	Victor Nilsson <vervex@home.se>
+
+	* firefox/help: added help files
+
+	* firefox/global/plugins.css: changed bg to white (from almost), 
+	  though it doesn't make any sense
+
+	* firefox/mozapps/downloads/downloads.css: small fix
+	* firefox/update.rdf: moved to root
+	* firefox/contents.rdf
+	* firefox/oldclassic: deleted
+
+
+2004-07-22	Victor Nilsson <vervex@home.se>
+
+	* firefox/classic/skin/classic/mozapps/downloads/downloadOptions.png 
+	* firefox/classic/skin/classic/mozapps/downloads/downloadCleanup.png
+	* firefox/classic/skin/classic/browser/page-themes.png: new icon
+
+	* src/page-themes.xcf
+	* firefox/classic/skin/classic/mozapps/downloads/downloads.css
+	* firefox/classic/skin/classic/mozapps/downloads/
+	  downloadCleanupDisabled.png: deleted since it's not used 
+	  anymore
+
+	* firefox/classic/skin/classic/install.rdf: changed version 
+	  number to 0.9.1
+
+
+2004-07-22	Victor Nilsson <vervex@home.se>
+
+	* firefox/classic/skin/classic/browser/tab-new.png: Some small 
+	  changes according to the changes in the new tab icon in 
+	  toolbar.png
+
+
+2004-07-21	Victor Nilsson <vervex@home.se>
+
+	* firefox/classic/skin/classic/mozapps/extensions/about.css: 
+	  Changed background to white
+
+	* firefox/classic/skin/classic/install.rdf: Changed homepageURL 
+	  and updateURL
+
+	* firefox/update.rdf
+
+
+2004-07-21	Roman Joost <roman@bromeco.de>
+
+	* firefox/classic/skin/classic/global/filepicker.css: removed icon
+	  for files
+
+
+2004-07-21	Roman Joost <roman@bromeco.de>
+
+	* Changelog: added new Changelog for tracking commits
+	
+	* firefox/classic/skin/classic/global/browser.css: fixed
+	  not appearing tab-loading.gif
+	  
+	* firefox/classic/skin/classic/global/plugins.css: changed to
+	  nearly white background
+	  
+	* firefox/classic/skin/classic/browser/page-themes.png: new icon
+	
+	* firefox/classic/skin/classic/browser/toolbar.png: slight
+	  modifications to 'new tab icon' based on the idea from
+	  Thomas <office@agila.info>
+	  
+	* firefox/classic/skin/classic/browser/browser.css
+	* src/tab-new.xcf
+	* src/page-themes.xcf: source files includes fixes
