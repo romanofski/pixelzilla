@@ -1,0 +1,43 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#sidebar-box {
+  margin-top: -1px;
+  background-color: Window;
+}
+
+.box-texttab {
+  -moz-binding: url("chrome://help/skin/sidebarBindings.xml#sbtab");
+  height: 20px;
+  -moz-appearance: toolbox;
+	border-top: solid 2px;
+  -moz-border-top-colors: ThreeDShadow ThreeDHighlight;
+  padding: 2px 1px 4px 0px;
+}
+
+.box-texttab[selected="true"],
+.box-texttab[selected="true"]:hover,
+.box-texttab[selected="true"]:hover:active {
+  font-weight: bold;
+  cursor: default;
+}
+
+.sbtab-label {
+  margin: 0px 0px 0px 0px !important;
+}
+
+.sbtab-twisty {
+  margin: 0px 7px;
+  list-style-image: url("chrome://help/skin/sbtab-twisty.png");
+	-moz-image-region: rect(0px 8px 16px 0px);
+}
+
+.sbtab-twisty[selected="true"] {
+  -moz-image-region: rect(0px 16px 16px 8px);
+}
+
+.sbtab-texture {
+  margin: 2px 0px;
+  background: url("chrome://help/skin/sbtab-texture.gif") repeat-y;
+  width: 12px;
+  height: 12px;
+}

@@ -1,0 +1,65 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-strip {
+  border-bottom: 1px solid ThreeDShadow;
+  padding-bottom: 1px;
+}
+
+tabpanels {
+  -moz-appearance: none;
+}
+
+.tabbrowser-tabs {
+  padding-top: 1px;
+}
+
+.tabs-left,
+.tabs-right {
+  width: 3px;
+}
+
+.tab-icon {
+  margin-top: 1px;
+  margin-right: 3px;
+  width: 16px;
+  height: 16px;
+  list-style-image: url("chrome://global/skin/icons/folder-item.png");
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+tab[busy] > .tab-icon {
+  list-style-image: url("chrome://browser/skin/tab-loading.gif");
+}
+
+tab[selected="true"] {
+  font-weight: bold;
+}
+
+browsermessage {
+  background-color: #fafac6;
+  color: #000000;
+  padding: 3px;
+}
+
+browsermessage[type="top"] {
+  border-bottom: 1px dotted #000;
+}
+
+browsermessage[type="bottom"] {
+  border-top: 1px dotted #000;
+}
+
+/* since firefox wants to use browser/Info.png in .messageImage */
+browsermessage[popup="blockedPopupOptions"] {
+  padding-left: 19px;
+  background: url(chrome://browser/skin/popup-blocked.png) no-repeat 3px 3px #fafac6;
+}
+
+.messageText {
+  margin-left: 5px;
+}
+
+.messageButton {
+  margin: 0px 5px 0px 5px;
+}

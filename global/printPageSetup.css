@@ -1,0 +1,7 @@
+.portrait-page {
+  list-style-image: url("chrome://global/skin/icons/pg-portrait.png");
+}
+
+.landscape-page {
+  list-style-image: url("chrome://global/skin/icons/pg-landscape.png");
+}

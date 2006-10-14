@@ -1,0 +1,101 @@
+#bookmark-window toolbarbutton {
+  list-style-image: url("chrome://browser/skin/bookmarks/Bookmarks-toolbar.png");
+  -moz-box-orient: vertical;
+}
+
+#bookmarks-search {
+  margin-left: -1px;
+	margin-right: -1px;
+  background-color: -moz-Dialog;
+  border-width: 1px 0 0 0;
+}
+
+toolbarbutton#newbookmark {
+  -moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+toolbarbutton#newbookmark:hover {
+  -moz-image-region: rect(16px, 96px, 32px, 80px);
+}
+toolbarbutton#newbookmark[disabled="true"] {
+  -moz-image-region: rect(32px, 96px, 48px, 80px);
+}
+
+toolbarbutton#newlivemark {
+  -moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+
+toolbarbutton#newlivemark:hover {
+  -moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+
+toolbarbutton#newlivemark[disabled="true"] {
+  -moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+
+toolbarbutton#newfolder {
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+toolbarbutton#newfolder:hover {
+  -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+toolbarbutton#newfolder[disabled="true"] {
+  -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+
+toolbarbutton#newseparator {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+toolbarbutton#newseparator:hover {
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+toolbarbutton#newseparator[disabled="true"] {
+  -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+
+toolbarbutton#moveBookmark {
+  -moz-image-region: rect(0px, 115px, 16px, 96px);
+}
+toolbarbutton#moveBookmark:hover {
+  -moz-image-region: rect(16px, 115px, 32px, 96px);
+}
+toolbarbutton#moveBookmark[disabled="true"] {
+  -moz-image-region: rect(32px, 115px, 48px, 96px);
+}
+
+toolbarbutton#properties {
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+toolbarbutton#properties:hover {
+  -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+toolbarbutton#properties[disabled="true"] {
+  -moz-image-region: rect(32px, 48px, 48px, 32px);
+}
+
+toolbarbutton#rename {
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+toolbarbutton#rename:hover {
+  -moz-image-region: rect(16px, 64px, 32px, 48px);
+}
+toolbarbutton#rename[disabled="true"] {
+  -moz-image-region: rect(32px, 64px, 48px, 48px);
+}
+
+toolbarbutton#delete {
+  -moz-image-region: rect(0px, 80px, 16px, 64px);
+}
+toolbarbutton#delete:hover {
+  -moz-image-region: rect(16px, 80px, 32px, 64px);
+}
+toolbarbutton#delete[disabled="true"] {
+  -moz-image-region: rect(32px, 80px, 48px, 64px);
+}
+
+#bookmark-folders-view > .bookmarksTree {
+  margin: 0px;
+}
+
+#bookmark-views-splitter {
+  border: none; 
+}

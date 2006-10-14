@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{68a34935-bad7-4224-890f-4b15d20598d7}</em:id>
+    <em:version>0.9.6</em:version>
+
+    <!-- Target Application this extension can install into,
+         with minimum and maximum supported versions. -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>0.8</em:minVersion>
+        <em:maxVersion>1.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:name>PixelZilla</em:name>
+    <em:description>A theme based on pixel art.</em:description>
+    <em:creator>Roman Joost</em:creator>
+		<em:contributor>Stephanie Warrick, Victor Nilsson</em:contributor>
+    <em:homepageURL>http://pixelzilla.berlios.de</em:homepageURL>
+
+    <!-- Front End Integration Hooks (used by Theme Manager)-->
+    <em:internalName>pixelzilla</em:internalName>
+		<em:updateURL>http://pixelzilla.berlios.de/update.rdf</em:updateURL>
+  </Description>
+
+</RDF>
