@@ -1,37 +1,43 @@
 #bookmark-window toolbarbutton {
   list-style-image: url("chrome://browser/skin/bookmarks/Bookmarks-toolbar.png");
   -moz-box-orient: vertical;
+  min-width: 57px;
+  padding: 5px;
 }
 
-#bookmarks-search {
-  margin-left: -1px;
-	margin-right: -1px;
-  background-color: -moz-Dialog;
-  border-width: 1px 0 0 0;
+#bookmark-window toolbarbutton > .toolbarbutton-icon {
+  -moz-margin-end: 0px;
 }
+
+/* new bookmark */
 
 toolbarbutton#newbookmark {
-  -moz-image-region: rect(0px, 96px, 16px, 80px);
-}
-toolbarbutton#newbookmark:hover {
-  -moz-image-region: rect(16px, 96px, 32px, 80px);
-}
-toolbarbutton#newbookmark[disabled="true"] {
-  -moz-image-region: rect(32px, 96px, 48px, 80px);
+  -moz-image-region: rect(0px 96px 16px 80px);
 }
 
+toolbarbutton#newbookmark:hover {
+  -moz-image-region: rect(16px 96px 32px 80px);
+}
+
+toolbarbutton#newbookmark[disabled="true"] {
+  -moz-image-region: rect(32px 96px 48px 80px) !important;
+}
+
+/* new livemark */
+
 toolbarbutton#newlivemark {
-  -moz-image-region: rect(0px, 96px, 16px, 80px);
+  -moz-image-region: rect(0px 96px 16px 80px);
 }
 
 toolbarbutton#newlivemark:hover {
-  -moz-image-region: rect(0px, 96px, 16px, 80px);
+  -moz-image-region: rect(0px 96px 16px 80px);
 }
 
 toolbarbutton#newlivemark[disabled="true"] {
-  -moz-image-region: rect(0px, 96px, 16px, 80px);
+  -moz-image-region: rect(0px 96px 16px 80px) !important;
 }
 
+/* new folder */
 toolbarbutton#newfolder {
   -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
@@ -42,6 +48,8 @@ toolbarbutton#newfolder[disabled="true"] {
   -moz-image-region: rect(32px, 16px, 48px, 0px);
 }
 
+
+/* new separator */
 toolbarbutton#newseparator {
   -moz-image-region: rect(0px, 32px, 16px, 16px);
 }
@@ -52,6 +60,7 @@ toolbarbutton#newseparator[disabled="true"] {
   -moz-image-region: rect(32px, 32px, 48px, 16px);
 }
 
+/* move bookmark */
 toolbarbutton#moveBookmark {
   -moz-image-region: rect(0px, 115px, 16px, 96px);
 }
@@ -62,6 +71,7 @@ toolbarbutton#moveBookmark[disabled="true"] {
   -moz-image-region: rect(32px, 115px, 48px, 96px);
 }
 
+/* properties */
 toolbarbutton#properties {
   -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
@@ -72,6 +82,7 @@ toolbarbutton#properties[disabled="true"] {
   -moz-image-region: rect(32px, 48px, 48px, 32px);
 }
 
+/* rename */
 toolbarbutton#rename {
   -moz-image-region: rect(0px, 64px, 16px, 48px);
 }
@@ -82,6 +93,7 @@ toolbarbutton#rename[disabled="true"] {
   -moz-image-region: rect(32px, 64px, 48px, 48px);
 }
 
+/* delete */
 toolbarbutton#delete {
   -moz-image-region: rect(0px, 80px, 16px, 64px);
 }
@@ -92,10 +104,12 @@ toolbarbutton#delete[disabled="true"] {
   -moz-image-region: rect(32px, 80px, 48px, 64px);
 }
 
-#bookmark-folders-view > .bookmarksTree {
-  margin: 0px;
+#bookmark-folders-view treechildren:-moz-tree-row,
+#bookmarks-view treechildren:-moz-tree-row {
+  height: 20px;
 }
 
 #bookmark-views-splitter {
   border: none; 
 }
+

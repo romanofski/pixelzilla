@@ -1,26 +1,40 @@
-/*
- * The contents of this file are subject to the Netscape Public
- * License Version 1.1 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of
- * the License at http://www.mozilla.org/NPL/
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
- * Software distributed under the License is distributed on an "AS
- * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
- * implied. See the License for the specific language governing
- * rights and limitations under the License.
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
  *
  * The Original Code is Mozilla Communicator client code, released
  * March 31, 1998.
  *
- * The Initial Developer of the Original Code is Netscape
- * Communications Corporation. Portions created by Netscape are
- * Copyright (C) 1998-1999 Netscape Communications Corporation. All
- * Rights Reserved.
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
- *   Roman Joost (roman@bromeco.de)
- */
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
 
 /* ===== toolbarbutton.css =====================================================
   == Styles used by the XUL button element.
@@ -36,17 +50,31 @@ toolbarbutton {
   -moz-box-pack: center;
   margin: 0;
   border: 1px solid transparent;
+  padding: 3px;
   background-color: transparent;
   color: -moz-DialogText;
 }
 
 .toolbarbutton-icon {
-  margin-right: 2px;
+  -moz-margin-end: 5px;
 }
 
 .toolbarbutton-text {
   margin: 0 !important;
   text-align: center;
+}
+
+toolbarbutton.tabbable {
+  -moz-user-focus: normal !important;
+}
+
+toolbarbutton:focus 
+{
+  /* -moz-appearance looks redundant here but is necessary.
+      Without it, the outline won't appear. */
+  -moz-appearance: toolbarbutton;
+  outline: 1px dotted -moz-DialogText;
+  -moz-outline-offset: -2px;
 }
 
 toolbarbutton:hover,
@@ -57,7 +85,10 @@ toolbarbutton[buttonover="true"] {
 toolbarbutton:hover:active,
 toolbarbutton[open="true"] {
   border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
-  padding: 4px 2px 2px 4px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 2px;
 }
 
 toolbarbutton[disabled="true"],
@@ -66,16 +97,19 @@ toolbarbutton[disabled="true"]:hover:active,
 toolbarbutton[disabled="true"][open="true"] {
   border-color: transparent;
   padding: 3px;
-  color: GrayText;
+  color: GrayText !important;
 }
 
 /* ..... checked state ..... */
 
 toolbarbutton[checked="true"] {
   border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow !important;
-  padding: 4px 2px 2px 4px !important;
+  padding-top: 4px !important;
+  padding-bottom: 2px !important;
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 2px !important;
   background-image: url("chrome://global/skin/toolbar/Lighten.png");
-  color: ButtonText !important;
+  color: ButtonText;
 }
 
 /* ::::: toolbarbutton menu ::::: */
@@ -104,13 +138,11 @@ toolbarbutton[type="menu-button"][disabled="true"],
 toolbarbutton[type="menu-button"][disabled="true"]:hover,
 toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
   border-style: none;
-  padding: 0;
+  padding: 0 !important;
 }
 
-.toolbarbutton-menubutton-button,
-.toolbarbutton-menubutton-button:hover,
-.toolbarbutton-menubutton-button[buttonover="true"] {
-	-moz-box-align: center;
+.toolbarbutton-menubutton-button {
+  -moz-box-align: center;
   -moz-box-pack: center;
   -moz-box-orient: vertical;
 }
@@ -119,16 +151,15 @@ toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
 
 .toolbarbutton-menubutton-dropmarker {
   -moz-box-align: center;
-  padding: 0 3px 1px 0;
+  padding: 3px;
   list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
   -moz-image-region: auto; /* cut off inheritance */
 }
 
 .toolbarbutton-menubutton-dropmarker[disabled="true"] {
-  padding: 0 3px 1px 0 !important;
   list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif") !important;
 }
 
-toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker {
-  padding: 1px 2px 0 1px;
+toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[type="menu-button"][buttondown="true"] > .toolbarbutton-menubutton-dropmarker {
 }

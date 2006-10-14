@@ -40,10 +40,9 @@
    ======================================================================= */
 
 body {
-  background-color: #fff;
-  color: #000;
-  font-family: arial, helvetica;
-	font-size: 11px;
+  background-color: -moz-Field;
+  color: -moz-FieldText;
+  font: message-box;
 }
 
 div#outside {
@@ -71,15 +70,9 @@ div#findmore {
 div.plugname {
   margin-top: 2em;
   margin-bottom: 1em;
-  border-bottom: 1px dotted #0e1650;
-	text-align: left;
-  font-family: Georgia, serif;
-  font-size: 15px;
+  font-size: large;
+  text-align: left;
   font-weight: bold;
-}
-
-hr {
-  display: none;
 }
 
 dl {
@@ -97,7 +90,7 @@ table {
 }
 
 th {
-	text-align: center;
+  text-align: center;
   background-color: Highlight;
   color: HighlightText;
 }
@@ -108,12 +101,12 @@ td + td {
 }
 
 td {
-	text-align: left;
+  text-align: left;
   border-top: 1px dotted ThreeDShadow;
 }
 
 th, td {
-  padding: 4px 4px 5px 4px;
+  padding: 3px;
 }
 
 th.type, th.suff {
@@ -126,21 +119,4 @@ th.desc {
 
 th.enabled {
   width: 10%;
-}
-
-a:link { 
-    color: blue;
-    text-decoration: underline;
-}
-
-a:visited { 
-    color: #6e8db0;
-    text-decoration: none;
-}
-
-a:hover { 
-  color: red;
-  border-style: none;
-  text-decoration: underline;
-  background-color: transparent;
 }

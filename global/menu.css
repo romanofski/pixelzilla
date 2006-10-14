@@ -1,26 +1,40 @@
-/*
- * The contents of this file are subject to the Netscape Public
- * License Version 1.1 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of
- * the License at http://www.mozilla.org/NPL/
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
- * Software distributed under the License is distributed on an "AS
- * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
- * implied. See the License for the specific language governing
- * rights and limitations under the License.
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
  *
  * The Original Code is Mozilla Communicator client code, released
  * March 31, 1998.
  *
- * The Initial Developer of the Original Code is Netscape
- * Communications Corporation. Portions created by Netscape are
- * Copyright (C) 1998-1999 Netscape Communications Corporation. All
- * Rights Reserved.
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
  *
- */
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
 
 /* ===== menu.css =======================================================
   == Styles used by XUL menu-related elements.
@@ -33,6 +47,7 @@
 menu,
 menuitem {
   -moz-box-align: center;
+  border: 1px solid transparent;
   color: MenuText;
   font: menu;
   list-style-image: none;
@@ -51,34 +66,44 @@ menuitem[_moz-menuactive="true"][disabled="true"] {
 
 /* ..... internal content .... */
 
+.menu-accel,
+.menu-iconic-accel,
 .menu-text,
-.menu-iconic-left,
 .menu-iconic-text {
-  margin: 0px 2px 0px 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  -moz-margin-start: 1px !important;
+  -moz-margin-end: 2px !important;
   color: inherit;
 }
 
 .menu-text {
-  margin-left: 18px !important;
+  -moz-margin-start: 17px !important;
   font-weight: inherit;
 }
 
 .menu-accel,
 .menu-iconic-accel {
-  margin: 0px 2px 0px 7px !important;
-  padding-right: 14px;
+  -moz-padding-end: 17px;
+  -moz-margin-start: 5px;
   color: inherit;
 }
 
 .menu-iconic-left {
-  width: 16px;
+  min-width: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: 2px;
 }
 
 /* ..... menu arrow box ..... */
 
 .menu-right {
-  margin: 0px 0px 0px 0px;
-/*  width: 4px; */
+  margin-top: 0px;
+  margin-bottom: 1px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 6px;
   list-style-image: url("chrome://global/skin/menu/Menu-arrow.png");
   -moz-image-region: auto;
 }
@@ -93,14 +118,33 @@ menuitem[_moz-menuactive="true"][disabled="true"] {
   -moz-image-region: auto;
 }
 
+.menu-right[chromedir="rtl"] {
+  list-style-image: url("chrome://global/skin/menu/Menu-arrow-rtl.png");
+}
+
+.menu-right[chromedir="rtl"][_moz-menuactive="true"] {
+  list-style-image: url("chrome://global/skin/menu/Menu-arrow-hover-rtl.png");
+}
+
+.menu-right[chromedir="rtl"][disabled="true"] {
+  list-style-image: url("chrome://global/skin/menu/Menu-arrow-disabled-rtl.png") !important;
+}
+
 /* ::::: menu/menuitems in menubar ::::: */
 
 menubar > menu {
-  border: 1px solid transparent;
-  padding: 2px 5px 2px 7px;
-  margin: 1px 0px 1px 0px;
+  border: 1px solid transparent !important;
+  padding-top: 1px;
+  -moz-padding-end: 3px;
+  padding-bottom: 1px;
+  -moz-padding-start: 2px;
+	margin-top: 0px !important;
+  margin-bottom: 1px !important;
 }
 menubar > menu[_moz-menuactive="true"] {
+  padding: 1px 3px 1px 2px !important;
+  background-color : Highlight !important;
+  color: HighlightText !important;
   border-top: 1px solid ThreeDHighlight;
   border-right: 1px solid ThreeDShadow;
   border-bottom: 1px solid ThreeDShadow;
@@ -111,17 +155,28 @@ menubar > menu[_moz-menuactive="true"][open="true"] {
   border-right: 1px solid ThreeDHighlight;
   border-bottom: 1px solid ThreeDHighlight;
   border-left: 1px solid ThreeDShadow;
+  padding-top: 1px;
+  -moz-padding-end: 2px;
+  padding-bottom: 0px;
+  -moz-padding-start: 3px;
 }
 
 /* ..... internal content .... */
 
 .menubar-left {
-  margin: 0px 2px 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 2px;
   color: inherit;
 }
 
 .menubar-text {
-  margin: 0px 2px 0px 0px !important;
+  margin-top: 1px;
+  -moz-margin-end: 4px !important;
+  margin-bottom: 1px;
+  -moz-margin-start: 5px !important;
+  padding-top: 1px;
   color: inherit;
 }
 
@@ -131,7 +186,6 @@ menupopup > menu,
 popup > menu,
 menupopup > menuitem,
 popup > menuitem {
-  padding: 2px;
   max-width: 42em;
 }
 
@@ -150,7 +204,10 @@ menulist > menupopup > menuitem,
 .menulist-menupopup > menu,
 menulist > menupopup > menu {
   border: 1px solid transparent;
-  padding: 1px 30px 1px 5px;
+  padding-top: 1px;
+  -moz-padding-end: 30px;
+  padding-bottom: 1px;
+  -moz-padding-start: 5px;
   max-width: none;
   font: message-box;
   color: -moz-FieldText;
@@ -165,6 +222,10 @@ menulist > menupopup > menu > .menu-iconic-left {
 
 menulist > menupopup > menuitem[_moz-menuactive="true"] {
   border: 1px dotted #F5DB95;
+}
+
+menulist > menupopup > menuitem > .menu-iconic-text {
+  margin: 0 !important;
 }
 
 /* ::::: checkbox menuitem ::::: */
@@ -204,14 +265,14 @@ menuitem[checked="true"][type="radio"][_moz-menuactive="true"] {
 /* ::::: menuseparator ::::: */
 
 menuseparator {
-  margin: 2px 3px;
+  margin: 3px 1px 4px 1px;
   border-top: 1px solid ThreeDShadow;
   border-bottom: 1px solid ThreeDHighlight;
 }
 
 menulist > menupopup > menuseparator,
 .menulist-menupopup > menuseparator {
-  margin: 2px 0;
+  margin: 6px 0 5px 0;
   border-top: 1px solid #000000;
   border-bottom: none;
 }
@@ -226,7 +287,7 @@ menulist > menupopup > menuseparator,
 /* ::::: tree column picker ::::: */
 
 .treecell-popupcell-menu {
-  margin-left: -2px;
+  -moz-margin-start: -2px;
   list-style-image: url("chrome://global/skin/columnselect.gif");
   -moz-image-region: auto;
 }
