@@ -1,0 +1,4 @@
+skin	global	  pixelzilla	chrome/global/
+skin	browser	  pixelzilla	chrome/browser/
+skin	mozapps	  pixelzilla	chrome/mozapps/
+skin	help	    pixelzilla	chrome/help/
