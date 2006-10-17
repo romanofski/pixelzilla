@@ -1,3 +1,7 @@
+2006-10-17  Roman Joost  <romanofski@gimp.org>
+
+	* src/preview.xcf: replaced preview with pixelpusher
+
 2006-10-14  Roman Joost  <roman@bromeco.de>
 
 	* firefox2/install.rdf: updated for Firefox 2 compatible theme
