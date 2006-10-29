@@ -1,3 +1,14 @@
+2006-10-29  Roman Joost  <romanofski@gimp.org>
+
+	* install.rdf
+	* preview.png
+	* chrome/browser/preferences/preferences.css
+	* chrome/mozapps/extensions/themeGeneric.png
+	* chrome/mozapps/extensions/extensions.css
+	* chrome/mozapps/extensions/update.css
+	* chrome/mozapps/extensions/extensionGeneric.png: added new
+	icons for extensions and themes. Updated the CSS accordingly.
+
 2006-10-17  Roman Joost  <romanofski@gimp.org>
 
 	* src/preview.xcf: replaced preview with pixelpusher
