@@ -1,3 +1,24 @@
+2006-11-15  Roman Joost  <romanofski@gimp.org>
+
+	* chrome/browser/searchbar.css
+	* chrome/browser/Search-provider-mid-top.png
+	* chrome/browser/Search-provider-mid-bottom.png
+	* chrome/browser/Search-glass-rtl.png
+	* chrome/browser/Search-mid-top.png
+	* chrome/browser/Search-mid-bottom.png
+	* chrome/browser/Search-provider-bkgnd.png
+	* chrome/browser/Search-bkgnd.png
+	* chrome/browser/Search-mid-top-rtl.png
+	* chrome/browser/Search-glass.png
+	* chrome/browser/Search-mid-bottom-rtl.png
+	* chrome/browser/Search-bkgnd-rtl.png: added from classic skin -
+	not sure if I gonna keep those. Probably not...
+
+	* src/themesicon.xcf
+	* chrome/mozapps/extensions/themeGeneric.png: made it bit
+	brighter
+
+
 2006-10-29  Roman Joost  <romanofski@gimp.org>
 
 	* install.rdf
