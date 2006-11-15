@@ -1,5 +1,12 @@
 2006-11-15  Roman Joost  <romanofski@gimp.org>
 
+	* src/prefs.xcf
+	* chrome/browser/preferences/preferences.css
+	* chrome/browser/preferences/Options.png: added new icon for
+	privacy
+
+2006-11-15  Roman Joost  <romanofski@gimp.org>
+
 	* chrome/browser/searchbar.css
 	* chrome/browser/Search-provider-mid-top.png
 	* chrome/browser/Search-provider-mid-bottom.png
